@@ -137,15 +137,26 @@ public class Metodos {
             switch (opc) {
                 case 1: //Semilla por teclado
                     //Pregunta por la semilla y la valida 
-                    
-                    System.out.print("Introduzca una semilla de 10 digitos: ");
-                    long num1 = sc.nextLong();
-                    long num2 = num1;
+                    boolean validacion = true;
+                    long num1 = 0;
+                    long num2 = 0;
+                    long longitudLC;
+                    while(validacion = true){
+                        System.out.print("Introduzca una semilla de 10 digitos: ");
+                        num1 = sc.nextLong();
+                        num2 = num1;
+                        longitudLC = Long.toString(num1).length();  
+                        if (longitudLC != 10){
+                            System.out.println("Error: El numero no es de 10 digitos, vuelva a intentarlo");
+                        }else{
+                            break;
+                        }
+                    }
                     do{
                         lista.add(num2);
                         num1 = num2;
                         long numCuadrado = (long) Math.pow(num1, 2);
-                        long longitudLC = Long.toString(numCuadrado).length();
+                        longitudLC = Long.toString(numCuadrado).length();
                         String numString = Long.toString(numCuadrado);
                         String num2String = "";
                         int centro = 0;
@@ -186,7 +197,7 @@ public class Metodos {
                         lista.add(num2);
                         num1 = num2;
                         long numCuadrado = (long) Math.pow(num1, 2);
-                        long longitudLC = Long.toString(numCuadrado).length();
+                        longitudLC = Long.toString(numCuadrado).length();
                         String numString = Long.toString(numCuadrado);
                         String num2String = "";
                         int centro = 0;
