@@ -1,18 +1,9 @@
-## Getting Started
+## DESCRIPCION DEL PROGRAMA
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
+Este programa genera numeros Paeudo-Aleatorios por el método de medios cuadrados y por el método de Newman.
 
-The workspace contains two folders by default, where:
+En los dos métodos se pueden genrerar numeros aleatorios de las dos siguientes formas
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- `Semilla por teclado`: Se usa la semilla que el usuario ponga, validando que sea valida para cada método
+- `Semilla por función`: Se genera la semilla con ayuda de la función Random de java
